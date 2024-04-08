@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_home">
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="fpoly.huyndph40487.qlda_bantrsua.view.HomeFragment"
+        android:label="home"
+        tools:layout="@layout/fragment_home">
+        <action
+            android:id="@+id/action_navigation_home_to_productCartFragment"
+            app:destination="@id/productCartFragment" />
+        <action
+            android:id="@+id/action_navigation_home_to_fragment_QL_Product"
+            app:destination="@id/fragment_QL_Product" />
+        <action
+            android:id="@+id/action_navigation_home_to_fragment_QL_DonHang2"
+            app:destination="@id/fragment_QL_DonHang2" />
+        <action
+            android:id="@+id/action_navigation_home_to_managerBillFragment"
+            app:destination="@id/managerBillFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/productCartFragment"
+        android:name="fpoly.huyndph40487.qlda_bantrsua.view.ProductCartFragment"
+        android:label="fragment_product_cart"
+        tools:layout="@layout/fragment_product_cart" />
+
+    <fragment
+        android:id="@+id/fragment_QL_Product"
+        android:name="fpoly.huyndph40487.qlda_bantrsua.view.adminmanager.Fragment_QL_Product"
+        android:label="Fragment_QL_Product" />
+    <fragment
+        android:id="@+id/fragment_QL_DonHang2"
+        android:name="fpoly.huyndph40487.qlda_bantrsua.Manager.Fragment_QL_DonHang"
+        android:label="fragment__q_l__don_hang"
+        tools:layout="@layout/fragment__q_l__don_hang" />
+    <fragment
+        android:id="@+id/managerBillFragment"
+        android:name="fpoly.huyndph40487.qlda_bantrsua.view.managerBill.ManagerBillFragment"
+        android:label="fragment_manager_bill"
+        tools:layout="@layout/fragment_manager_bill" />
+
+</navigation>
